@@ -239,7 +239,7 @@
         // if (gallery2) gallery2.innerHTML = '';
         // Display all cards
         array.forEach(function (item) {
-            var card = "\n\n        <div class=\"col-xl-3 col-lg-4 col-sm-6\">\n          <div class=\"card-body text-center\">\n            <div class=\"card-img overflow-hidden d-block\">\n              <img src=\"".concat(item.imageSrc, "\" alt=\"").concat(item.title, "\" class=\"img-fluid\">\n            </div>\n            <div class=\"card-content\">\n              <p class=\"text-muted fs-1x\">").concat(item.title, "</p>\n            </div>\n          </div>\n        </div>\n      ");
+            var card = "\n\n        <div class=\"col-xl-3 col-lg-4 col-sm-6\">\n          <div class=\"card-body text-center\">\n            <div class=\"card-img overflow-hidden d-block\">\n              <img src=\"".concat(item.imageSrc, "\" alt=\"").concat(item.title, "\" class=\"img-fluid\" style=\"width:98%;margin:auto;height:250px;border:2px solid white;border-radius:5px\">\n            </div>\n            <div class=\"card-content\">\n              <p class=\"text-muted fs-1x\">").concat(item.title, "</p>\n            </div>\n          </div>\n        </div>\n      ");
             if (gallery)
                 gallery.innerHTML += card;
         });

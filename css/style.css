@@ -260,6 +260,10 @@ animation: slideLeft 15s infinite linear;
     font-size: 15px;
     background-color: #ffffff;
   }
+  .about .container{
+    width: 100%!important;
+
+  }
 }
 /* ******** End About section ******** */
 

@@ -294,7 +294,7 @@ display(cardsContainerOne.slice(0,8),'cards-container-4')
         <div class="col-xl-3 col-lg-4 col-sm-6">
           <div class="card-body text-center">
             <div class="card-img overflow-hidden d-block">
-              <img src="${item.imageSrc}" alt="${item.title}" class="img-fluid">
+              <img src="${item.imageSrc}" alt="${item.title}" class="img-fluid" style="width:98%;margin:auto;height:250px;border:2px solid white;border-radius:5px">
             </div>
             <div class="card-content">
               <p class="text-muted fs-1x">${item.title}</p>
