@@ -29,7 +29,20 @@
       $('header').removeClass('d-none');
     }
   });
+ // ////////////////////slider
 
+document.addEventListener("DOMContentLoaded", function () {
+  const filmtripimgs = document.querySelectorAll('.filmtripimg');
+  const largeImage = document.getElementById('largeImg') as HTMLImageElement;
+
+  filmtripimgs.forEach(function (filmtripimg) {
+      filmtripimg.addEventListener('click', function () {
+          if (filmtripimg instanceof HTMLImageElement) {
+              largeImage.src = filmtripimg.src;
+          }
+      });
+  });
+});
 
   // gallery
   let loadMoreCardsButton: any = document.getElementById('load-more-cards-btn');

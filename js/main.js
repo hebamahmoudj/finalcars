@@ -23,6 +23,18 @@
             $('header').removeClass('d-none');
         }
     });
+    // ////////////////////slider
+    document.addEventListener("DOMContentLoaded", function () {
+        var filmtripimgs = document.querySelectorAll('.filmtripimg');
+        var largeImage = document.getElementById('largeImg');
+        filmtripimgs.forEach(function (filmtripimg) {
+            filmtripimg.addEventListener('click', function () {
+                if (filmtripimg instanceof HTMLImageElement) {
+                    largeImage.src = filmtripimg.src;
+                }
+            });
+        });
+    });
     // gallery
     var loadMoreCardsButton = document.getElementById('load-more-cards-btn');
     var cardsContainerOne = [

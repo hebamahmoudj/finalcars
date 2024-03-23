@@ -27,22 +27,20 @@
   <!-- start of head  -->
   
   <header class="text-white bg-dark d-flex justify-content-around align-items-center">
-    
-    <ul class="  d-flex justify-content-center align-items-center gap-2 ">
-      
+    <ul class=" mb-0 d-flex justify-content-center align-items-center gap-4">
       <li>
         <i class="fa-brands fa-yahoo"></i>
-                <a class="fs-6x text-white" href="mailto:al_mohandes.company@yahoo.com">al_mohandes.company@yahoo.com</a>
+                <a class="fs-6 text-white" href="mailto:al_mohandes.company@yahoo.com">al_mohandes.company@yahoo.com</a>
       </li>
       <li>
         <i class="fa-solid fa-phone"></i>
-        <a class="fs-6x text-white" href="tel:+201066160783">01006902226</a>
+        <a class="fs-6 text-white" href="tel:+201066160783">01006902226</a>
       </li>
     </ul>
-    <ul class="d-flex justify-content-center align-items-center gap-4">
+    <ul class=" mb-0 d-flex justify-content-center align-items-center gap-4">
       <li>
         <a class="text-success" href="https://wa.me/+201006902226" target="_blank">
-          <i class="fa-brands fa-whatsapp fs-4x"></i>
+          <i class="fa-brands fa-whatsapp fs-4"></i>
         </a>
       </li>
       <li>
@@ -53,8 +51,7 @@
     </ul>
   </header>
 
-
-  <nav class="navbar navbar-expand-lg bg-body-tertiary " id="navbar-spy">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary p-0 shadow" id="navbar-spy">
     <div class="container" id="navcontainer">
       <a class="navbar-brand" href="./index.html">
 
@@ -90,8 +87,11 @@
 
  <!-- cinam slider -->
 <div id="home" class="cinema-slider  flex-column justify-content-around d-md-flex d-none d-xs-none">
-  <div class="main-slide-image mb-4" >
+  <div class="main-slide-image mb-4 position-relative d-flex align-items-center justify-content-center" >
     <img id="largeImg" src="./assets/Picture1.png" alt="Large Image" class="w-100" >
+    <div class=" position-absolute  ">
+    <h1  class="text-center text-white">مرحبا بكم في شركة المهندس</h1>
+  </div>
   </div>
   <div class="filmstrip text-center bg-dark">
     <img class="w-100 me-3 filmtripimg  d-md-block d-none" src="./assets/Picture11.png" alt="car Image 1">
@@ -110,21 +110,35 @@
 
 <!-- mobile slider -->
 <div id="carouselExampleIndicators" class="carousel slide d-block d-md-none bg-dark" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
+  <div class="carousel-inner  ">
+    
+    <div class="carousel-item active position-relative">
       <img  class="d-block w-100" src="./assets/Picture11.png" alt="carImg1">
+      <div class="carousel-caption  position-absolute top-50 bottom-50">
+        <h5 class="h6 ">مرحبا بكم في شركة المهندس</h5>
+      </div>
+
     </div>
-    <div class="carousel-item">
+    <div class="carousel-item position-relative">
       <img class="d-block w-100"  src="./assets/Picture12.jpg" alt="carImg2">
+      
+        <div class="carousel-caption position-absolute top-50 bottom-50">
+          <h5>معايير الجوده تأتي اولا</h5>
+        </div>
+
     </div>
     <div class="carousel-item">
       <img class="d-block w-100"   src="./assets/Picture14.jpg" alt="carImg3">
     </div>
     <div class="carousel-item">
       <img class="d-block w-100"   src="./assets/Picture22.jpg" alt="carImg4">
+      
+
     </div>
     <div class="carousel-item">
       <img class="d-block w-100"   src="./assets/Picture29.jpg" alt="carImg5">
+      
+
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -165,7 +179,7 @@
                 </div>
               </div>
               <div class="col-md-7">
-                <h3 class="fw-bold">شركة المهندس</h3>
+                <h1 class="fw-bold h3">شركة المهندس</h1>
                 <h5 class="h6 my-3">للتجارة و تجهيزات السيارات</h5>
                 <p>
                     تتميز شركة المهندس بتقديم خدمات عالية الجودة في مجال تجهيز وصيانة الهياكل المعدنية للسيارات. نحن نسعى جاهدين لتلبية احتياجات عملائنا بأعلى معايير الاحترافية والجودة.
@@ -382,7 +396,9 @@
     </div>
   </footer>
   <!-- end footer -->
-
+ <script>function toggleSize(image) {
+  image.classList.toggle("enlarged");
+}</script> 
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
