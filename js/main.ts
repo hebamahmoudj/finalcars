@@ -315,8 +315,31 @@ display(cardsContainerOne.slice(0,8),'cards-container-4')
     
   }
 
- 
+//  scroll to top 
 
+
+document.addEventListener("DOMContentLoaded", function() {
+  var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+  window.addEventListener("scroll", function() {
+    if (window.pageYOffset > 100) {
+      // Show the button when pageYOffset is greater than 100 pixels
+      scrollToTopBtn!.style.display = "block";
+    } else {
+      // Hide the button when pageYOffset is less than or equal to 100 pixels
+      scrollToTopBtn!.style.display = "none";
+    }
+  });
+
+  scrollToTopBtn!.addEventListener("click", function() {
+      
+    // Scroll to the top of the page smoothly
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+});
  
 
 })();

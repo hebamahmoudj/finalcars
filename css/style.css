@@ -593,3 +593,21 @@ footer h3 {
     gap: 10px;
   }
 }
+/* button to scroll top  */
+.scroll-to-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 7px 15px;
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+.scroll-to-top-btn:hover {
+  background-color: #0056b3;
+}
+/* end button  */
