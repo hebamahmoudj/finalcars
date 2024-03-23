@@ -57,40 +57,22 @@ header li  {
   padding: 10px 3px 9px 0;
 }
 
-* header */
-header li  {
-  /* font-size: 20px; */
-  display: inline-block;
-  padding: 10px 3px 9px 0;
-}
-@media (max-width: 768px) {
-  header .d-flex {
-    display: block !important;
+
+@media (max-width: 767.98px) {
+  header .d-flex,header ul .d-flex {
+    flex-direction: column;
   }
 
-  header .justify-content-around,
-  header .justify-content-center {
-    justify-content: center !important;
+  header .justify-content-around,header ul .d-flex  {
+    justify-content: space-between;
   }
 
-  header .align-items-center {
-    align-items: center !important;
+ header ul .gap-2 {
+    gap: 1rem;
   }
 
-  header .gap-4 {
-    gap: 1rem !important;
-  }
-
-  .fs-6 {
-    font-size: 0.875rem !important; /* Adjust font size as needed */
-  }
-
-  .fs-4 {
-    font-size: 1.5rem !important; /* Adjust font size as needed */
-  }
-
-  .fs-5 {
-    font-size: 1.25rem !important; /* Adjust font size as needed */
+  header ul .gap-4 {
+    gap: 2rem;
   }
 }
 .logo {  
@@ -188,13 +170,13 @@ background-color: rgba(242, 240, 240, 0.79);}
 .filmstrip {
  display: flex;
  justify-content: space-between;
- overflow: hidden; /* السماح بالتمرير الأفقي */
+ overflow: hidden; 
  width: 100%;
  height:10rem;
  border: 1px solid transparent;
 border-radius: 4px;
- scroll-snap-type: x mandatory; /* جعل التمرير الأفقي متقطعًا للانزلاق */
- }
+ scroll-snap-type: x mandatory; 
+}
 .filmstrip img {
 width:500px;
 height: 120px;
@@ -202,11 +184,11 @@ border:1px solid transparent;
 border-radius: 15px;
 margin: auto;
 object-fit: contain;
-transition: transform 0.3s; /* تأثير التحويل عند التحويم */
+transition: transform 0.3s; 
 scroll-snap-align: center;
 }
 .filmstrip img:hover {
- transform: scale(1.6); /* تكبير الصورة بنسبة 10% */
+ transform: scale(1.6); 
 }
 @keyframes slideLeft {
 0% { transform: translateX(100%); }
@@ -219,37 +201,7 @@ scroll-snap-align: center;
 .filmstrip {
 animation: slideLeft 15s infinite linear;
 }
-@media (max-width: 768px) {
- .filmstrip  {
-   width: 100%; 
-   overflow-x: hidden;
-   margin: auto;
-   display: flex;
-   align-items: center;
-   height: auto;
-   /* height: 7rem; */
-   margin-top: 6rem;
-   animation: slideLeft 10s infinite linear;
 
-
- }
- .main-slide-image{
-   width: 70%;
-   height: 30vh;
-   display: flex;
-   align-items: center;
-  
- }
- @keyframes slideLeft {
-   0% { transform: translateX(100%); }
-   
-   100% { transform: translateX(-30%); }
-   
-   0% { transform: translateX(0%); }
-   
-   }
-}
-/* end  slider */
 /* mobile slider */
 .carousel-item img{
  height:  250px;
@@ -296,7 +248,19 @@ animation: slideLeft 15s infinite linear;
 .about-btn:hover .about-icon{
   display: inline;
 }
+@media screen and (max-width: 768px) {
 
+  .about-btn {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .about-box{
+    box-shadow: var(--shadow-box);
+    padding: 64px 10px;
+    font-size: 15px;
+    background-color: #ffffff;
+  }
+}
 /* ******** End About section ******** */
 
 /* Start heading */
@@ -424,6 +388,14 @@ animation: slideLeft 15s infinite linear;
   padding: 64px 48px;
   background-color: #ffffff;
 }
+@media screen and (max-width: 768px) {
+ 
+
+  .contacts-box{
+    padding: 64px 10px;
+
+  }
+}
 
 /*************** END CONTACTS STYLE  ***********/
 
@@ -488,6 +460,39 @@ footer {
   }
   
 }
+/* footer */
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.footer-column {
+  flex: 1;
+  text-align: center;
+  margin: 10px; /* Adjust margin as needed */
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 767.98px) {
+  .footer-column {
+    flex-basis: 100%;
+  }
+}
+
+/* Media query for screens between 768px and 991.98px */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .footer-column {
+    flex-basis: 50%;
+  }
+}
+
+/* Media query for screens larger than or equal to 992px */
+@media (min-width: 992px) {
+  .footer-column {
+    flex-basis: 30%;
+  }
+}
 /* end footer */
 
 
@@ -512,6 +517,6 @@ footer {
 }
 
 .scroll-to-top-btn:hover {
-  background-color: #0056b3;
+  background-color: black;
 }
 /* end button  */
