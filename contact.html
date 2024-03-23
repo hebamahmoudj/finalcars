@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تواصل معنا</title>
+  <!-- bootstrap style -->
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <!-- fontawesome style -->
+  <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
+  <!-- cairo font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet" />
+
+  <!-- main style sheet -->
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <style>
+    /* تنسيق العنصر الرئيسي */
+    .services-container {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: flex-start;
+    }
+
+    /* تنسيق القائمة */
+    .services-list {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    /* تنسيق القائمة الفرعية */
+    .services-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    /* تنسيق الرموز */
+    .icon-container {
+      background-color: #d71d1d;
+      width: 22px;
+      height: 22px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 10px;
+      /* border-radius: 50%; */
+    }
+
+    .icon {
+      font-size: 13px;
+      color: white;
+    }
+
+    /* تنسيق النص */
+    .text {
+      font-size: 18px;
+      margin-right: 3px;
+    }
+
+    /* تنسيق الصورة */
+    .image-container {
+      flex-shrink: 0;
+      margin-left: 20px;
+      width: 300px;
+      vertical-align: middle;
+    }
+
+    .image {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- start of head  -->
+  <header class="text-white bg-dark d-flex justify-content-around align-items-center">
+    <ul class=" mb-0 d-flex justify-content-center align-items-center gap-4">
+      <li>
+        <i class="fa-brands fa-yahoo"></i>
+                <a class="fs-6 text-white" href="mailto:al_mohandes.company@yahoo.com">al_mohandes.company@yahoo.com</a>
+      </li>
+      <li>
+        <i class="fa-solid fa-phone"></i>
+        <a class="fs-6 text-white" href="tel:+201066160783">01006902226</a>
+      </li>
+    </ul>
+    <ul class=" mb-0 d-flex justify-content-center align-items-center gap-4">
+      <li>
+        <a class="text-success" href="https://wa.me/+201006902226" target="_blank">
+          <i class="fa-brands fa-whatsapp fs-4"></i>
+        </a>
+      </li>
+      <li>
+        <a class="text-primary" href="https://www.facebook.com/WMCombany/posts/pfbid02MWJAXxyVQg2h2Qa8LAQoJUeavZHb6gSmVceRwqyXVgR2ii12GHShKMA6tBcLM8Nzl" target="_blank">
+          <i class="fa-brands fa-facebook fs-5"></i>
+        </a>
+      </li>
+    </ul>
+  </header>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary shadow" id="navbar-spy">
+    <div class="container"  id="navcontainer">
+      <a class="navbar-brand" href="./index.html">
+        <img class="logo" src="./assets/logo.png" alt="Al-Mohandes" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item p-3">
+            <a class="nav-link position-relative p-0" aria-current="page"
+              href="./index.html">الرئيسية</a>
+          </li>
+
+          <li class="nav-item p-3">
+            <a class="nav-link right-border position-relative p-0" href="./about.html">من نحن؟</a>
+          </li>
+          <li class="nav-item p-3">
+            <a class="nav-link right-border position-relative p-0" href="./gallery.html">خدماتنا</a>
+          </li>
+          <li class="nav-item p-3">
+            <a class="nav-link right-border position-relative p-0" href="./contact.html">تواصل معنا</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- end of head  -->
+
+  <!-- start contact section -->
+      
+<section id="contacts" class="contacts section-p-s">
+
+ 
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-sm-12">
+
+        <div class="contacts-box">
+          <div class="row">
+
+            <div class="col-sm-12">
+
+              <div class="text-center title-box ">
+
+                <h2 class="title-text">اتصل بنا</h2>
+                <div class="line-un"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-5">
+              <div>
+                <div class="text-center mb-4">
+                  <p class="w-100 text-danger text-bold mb-1 h5">رقم الهاتف</p>
+                  <span class="text-dark"><i class="fa-solid fa-phone  ms-2"></i>01029729698</span>
+              </div>
+             
+              <div class="text-center mb-4">
+                  <p class="w-100 text-danger text-bold mb-1 h5">فاكس </p>
+                  <p class="text-dark"><i class="fa-solid fa-fax text-primary  ms-2"></i>02-37808886</p>
+              </div>
+              <div class="text-center mb-4">
+                  <p class="w-100 text-danger text-bold mb-1 h5">واتساب</p>
+                  <p class="text-dark"><i class="fa-brands fa-whatsapp ms-2"  style="color: #25D366;"></i>01003265694</p>
+              </div>               </div>
+            </div>
+            <div class="col-md-7">
+              <div class="text-center">
+                
+                <h4 class="text-danger h5">العنوان</h4>
+                <p>الادارة : 3 شارع ناصر الثورة – الهرم – الجيزة </p>
+                <p>التصنيع : ميدان فودافون – المحور المركزى – 6 اكتوبر– الجيزة </p>
+                          </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end contact section -->
+
+  <!-- start footer -->
+    <!-- start footer -->
+    <footer>
+
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>من نحن</h3>
+          <p>شركة المهندس جميع الخدمات الخاصة بتجهيزات السيارات</p>
+        </div>
+        <div class="footer-column">
+          <h3>تواصل معنا</h3>
+          <p>
+            البريد الإلكتروني:al_mohandes.company@yahoo.com<br />الهاتف:01006902226
+            <br />فاكس:02-37808886
+          </p>
+        </div>
+        <div class="footer-column">
+          <h3>تابعنا</h3>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/share/p/DtHdWfA7Kji24Lbb/?mibextid=qi2Omg"><i class="fab fa-facebook"></i> :فيسبوك</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+      <div class="copyright text-center">
+        <a href="https://hebamahmoudj.github.io/my-portfolio.github.io/ ">
+          <span>All rights reserved &copy; Heba 2024</span></a>
+      </div>
+    </footer>
+    <!-- end footer -->
+  <!-- end footer -->
+
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="./js/main.js" defer></script>
+</body>
+
+</html>
