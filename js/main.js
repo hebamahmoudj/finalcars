@@ -129,7 +129,7 @@
         },
         ,
         { "id": 1,
-            "imageSrc": "../assets/Picture34.jpg",
+            "imageSrc": "./assets/Picture34.jpg",
             "title": "تصنيع و تركيب وصيانة الابواب المتحركة العادية والكهربائية والاسوار المعدنية"
         },
         {
