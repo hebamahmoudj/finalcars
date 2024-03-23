@@ -57,6 +57,42 @@ header li  {
   padding: 10px 3px 9px 0;
 }
 
+* header */
+header li  {
+  /* font-size: 20px; */
+  display: inline-block;
+  padding: 10px 3px 9px 0;
+}
+@media (max-width: 768px) {
+  header .d-flex {
+    display: block !important;
+  }
+
+  header .justify-content-around,
+  header .justify-content-center {
+    justify-content: center !important;
+  }
+
+  header .align-items-center {
+    align-items: center !important;
+  }
+
+  header .gap-4 {
+    gap: 1rem !important;
+  }
+
+  .fs-6 {
+    font-size: 0.875rem !important; /* Adjust font size as needed */
+  }
+
+  .fs-4 {
+    font-size: 1.5rem !important; /* Adjust font size as needed */
+  }
+
+  .fs-5 {
+    font-size: 1.25rem !important; /* Adjust font size as needed */
+  }
+}
 .logo {  
   max-height: 75px;
 }
@@ -395,6 +431,7 @@ animation: slideLeft 15s infinite linear;
 
 
 
+
 /*  start footer */
 footer {
   background-color: black;
@@ -415,7 +452,7 @@ footer {
 }
 
 .footer-column h3 {
-  color: var(--main-color); /* Red accent color */
+  color: #d71d1d ;/* Red accent color */
 }
 
 .footer-column p {
@@ -440,159 +477,26 @@ footer {
 .footer-column ul li a:hover {
   color: var(--main-color); /* Red accent color */
 }
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+  }
+  
+  .footer-column {
+    margin: 10px 0;
+  }
+  
+}
+/* end footer */
+
+
+
+/*  */
+
+
 /* end footer */
 
-
-
-
-
-/* test footer */
-footer {
-  background-image: linear-gradient(#0009, #0009),url(./../assets/bg/textured-metal-background.jpg);
-  color: #fff;
-  box-shadow: 0px -1px 5px #0007;
-  background-size: contain;
-}
-
-footer .container {
-  --gap: 1.25rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--gap);
-}
-
-footer .container :is(.footer-about, .contact-details) {
-  width: calc(calc(100% - var(--gap) * 2) / 4);
-}
-
-footer .container :is(.subscription) {
-  width: calc(calc(100% - var(--gap) * 2) / 2);
-}
-
-footer .footer-about div:nth-child(1) {
-  display: flex;
-  align-items: center;
-  gap: 0.625rem;
-}
-
-footer .footer-about p {
-  margin-block: 0.625rem;
-}
-
-footer .footer-about img {
-  width: 2.5rem;
-  height: 2.5rem;
-}
-
-footer .social-f{
-  margin: auto;
-  width: 60%;
-}
-
-footer .social-f h3 {
-  text-align: center;
-  padding: 0.625rem;
-  border-bottom: 2px solid #ddd6;
-  margin-bottom: 0.625rem;
-}
-
-footer  .social-links {
-  padding: 0.625rem;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-footer  .social-links i {
-  font-size: 1.5rem;
-}
-
-footer .quick-links ul {
-  --gap: 1.25rem;
-  margin-top: 0.625rem;
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: var(--gap);
-}
-
-footer .quick-links ul li {
-  width: calc(calc(100% - var(--gap)) / 2);
-  padding: 5px;
-  position: relative;
-  transition: transform 0.3s, background-color 0.3s;
-}
-
-footer .quick-links ul li:hover {
-  transform: translateX(-10px);
-  background-color: #222;
-}
-footer .quick-links ul li a {
-  margin-right: 3px;
-}
-
-
-
-footer .contact-details h3 {
-  margin-bottom: 10px;
-}
-
-footer .contact-details ul li {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-footer .contact-details ul li i {
-  width: 2.5rem;
-  height: 2.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--main-color);
-  font-size: 1.375rem;
-  cursor: pointer;
-}
-footer a {
-  color: #fff;
-}
-
-footer .quick-links a {
-  color: var(--main-color);
-}
-
-footer h3 {
-  font-size: 25px;
-}
-
-
-
-/* @media */
-/*^========> Footer <========*/
-
-@media screen and (max-width: 1200px) {
-  footer .container :is(.footer-about, .contact-details) {
-    width: calc(calc(100% - var(--gap)) / 2);
-    order: 1;
-  }
-
-  footer .container :is(.subscription) {
-    width: 100%;
-    order: 2;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  footer .container :is(.footer-about, .contact-details, .subscription) {
-    width: 100%;
-    order: 0;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  footer .sunscription-group {
-    flex-direction: column;
-    gap: 10px;
-  }
-}
 /* button to scroll top  */
 .scroll-to-top-btn {
   position: fixed;
